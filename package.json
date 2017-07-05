@@ -1,0 +1,30 @@
+{
+  "name": "ricobeti",
+  "version": "1.0.0",
+  "description": "Personal Portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilentByte/ricobeti.git"
+  },
+  "author": "Rico A. Beti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SilentByte/ricobeti/issues"
+  },
+  "homepage": "https://github.com/SilentByte/ricobeti#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "yamljs": "^0.3.0"
+  }
+}

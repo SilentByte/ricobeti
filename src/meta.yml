@@ -1,0 +1,10 @@
+#
+#  Handlebars Variables
+#
+
+site:
+    title:          Rico A. Beti
+    url:            https://ricobeti.ch
+    description:    Personal Portfolio.
+    theme:          3465A4
+
