@@ -91,7 +91,8 @@ gulp.task('bs', function() {
         open: false,
         server: {
             baseDir: './dist/'
-        }
+        },
+        reloadDelay: 500
     })
 });
 
