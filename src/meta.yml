@@ -3,9 +3,9 @@
 #
 
 site:
-    title:          Rico A. Beti
+    title:          Rico A. Beti | Software Enthusiast
     url:            https://ricobeti.ch
-    description:    Personal Portfolio.
+    description:    Rico A. Beti, Software Enthusiast, Personal Portfolio.
     brand:          RB
 
     theme:
