@@ -112,9 +112,10 @@ gulp.task('dev', [
 
 gulp.task('serve', ['bs', 'dev'], function() {
     gulp.watch('./static/**/*', ['copy:static']);
-    gulp.watch('./src/**/*.hbs', ['build:html']);
-    gulp.watch('./src/**/*.scss', ['build:css']);
-    gulp.watch('./src/**/*.js', ['build:js']);
+    gulp.watch('./src/**/*.hbs', ['dev:html']);
+    gulp.watch('./src/**/*.scss', ['dev:css']);
+    gulp.watch('./src/**/*.js', ['dev:js']);
+    gulp.watch('./src/meta.yml', ['dev']);
 });
 
 gulp.task('default', ['build']);
