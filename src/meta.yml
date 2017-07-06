@@ -18,10 +18,19 @@ site:
         email:      mailto:rico@beti.ch
 
     sections:
-        - name:     about
+        - template: navigation
+
+        - template: about
+          name:     about
           title:    About
-        - name:     portfolio
+
+        - template: portfolio
+          name:     portfolio
           title:    Portfolio
-        - name:     contact
+
+        - template: contact
+          name:     contact
           title:    Contact
+
+        - template: footer
 
