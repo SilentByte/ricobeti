@@ -9,30 +9,30 @@ site:
     brand:          RB
 
     theme:
-        primary:    3465A4
-        colors:     blue-grey darken-2
-        accent:     blue-grey
+        primary:        3465A4
+        colors:         blue-grey darken-2
+        accent:         blue-grey
 
     social:
-        twitter:    https://twitter.com/RicoBeti
-        linkedin:   https://www.linkedin.com/in/ricobeti/
-        github:     https://github.com/SilentByte
-        email:      mailto:rico@beti.ch
+        twitter:        https://twitter.com/RicoBeti
+        linkedin:       https://www.linkedin.com/in/ricobeti/
+        github:         https://github.com/SilentByte
+        email:          mailto:rico@beti.ch
 
     sections:
-        - template: navigation
+        navigation:
 
-        - template: about
-          name:     about
-          title:    About
+        about:
+            name:       about
+            title:      About
 
-        - template: portfolio
-          name:     portfolio
-          title:    Portfolio
+        portfolio:
+            name:       portfolio
+            title:      Portfolio
 
-        - template: contact
-          name:     contact
-          title:    Contact
+        contact:
+            name:       contact
+            title:      Contact
 
-        - template: footer
+        footer:
 

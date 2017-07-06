@@ -25,8 +25,8 @@
 </head>
 <body>
 
-    {{#each site.sections }}
-        {{> (lookup . 'template') }}
+    {{#each site.sections as |value key|}}
+        {{> (key) }}
     {{/each}}
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
