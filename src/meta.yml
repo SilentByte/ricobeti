@@ -37,6 +37,80 @@ site:
         portfolio:
             name:       portfolio
             title:      Portfolio
+            projects:
+                primary:
+                    - title:        Helvetas Horticulture System
+                      image:        hhs.png
+                      url:          <a href="https://nepal.helvetas.org/en/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Helvetas Nepal</a>
+                      short: >
+                                    Streamline humanitarian aid for farmers in remote
+                                    regions of Nepal using modern tech.
+                      tags:
+                                    - android
+                                    - java
+                                    - csharp
+                                    - sqlserver
+                                    - restful
+                      long: >
+                                    The aim of this project is streamlining humanitarian aid efforts for Nepali farmers living
+                                    in remote villages by allowing them to request help using accessible, low-cost Android hardware.
+                                    Following a strictly generic design philosophy, the system consists of the Android app,
+                                    a backing ticketing system for managing requests for help, and a back-end server system
+                                    combined with an extensible knowledge base. System is in active use in Nepal's remote regions.
+
+                    - title:        Online Quiz | Gamification
+                      image:        quiz.png
+                      short:        Increase user perception and engagement by the means of gamification and multiplayer mode.
+                      tags:
+                                    - php
+                                    - mysql
+                                    - html
+                                    - css
+                                    - javascript
+                      long: >
+                                    The goal of this project was to improve and extend an existing Online Quiz Portal intended
+                                    for use at educational institutions. Tasks included security improvements, MVC refactoring,
+                                    and implementation of an interactive, multiplayer-capable real-time challenge mode. A
+                                    sophisticated gamification approach was introduced featuring stats and achievements.
+
+                secondary:
+                    - title:        LiteCache
+                      image:        litecache.png
+                      url:          <a href="https://github.com/SilentByte/litecache"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Github Repository</a>
+                      short:        A lightweight, easy-to-use, and straightforward PHP caching library.
+                      tags:
+                                    - psr-16
+                                    - cache-storage
+                      long: >
+                                    LiteCache is a lightweight, easy-to-use, and PSR-16 compliant caching library for PHP 7.0+
+                                    that tries to utilize PHP's built in caching mechanisms. Advanced caching systems such as
+                                    Memcached are often not available on low-cost hosting providers. However, code/opcode caching
+                                    is normally enabled to speed up execution. LiteCache leverages this functionality by generating
+                                    *.php files for cached objects which are then optimized and cached by the execution environment.
+
+                    - title:        Dynamic Lexer
+                      image:        dynlex.png
+                      url:          <a href="https://github.com/SilentByte/sb-dynlex"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Github Repository</a>
+                      short:        Dynamic lexer library for PHP featuring a fluid interface.
+                      tags:
+                                    - lexer-generator
+                                    - parsing
+                                    - syntax
+                      long: >
+                                    DynLex is an easy-to-use library for PHP that provides the functionality to create and use dynamically
+                                    configurable lexers accessed via a fluid interface.
+
+                    - title:        Memory Allocator
+                      image:        memalloc.png
+                      url:          <a href="https://github.com/SilentByte/sb-memory-allocator"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Github Repository</a>
+                      short:        Composable template-based header-only memory allocator for C++.
+                      tags:
+                                    - cpp11
+                                    - malloc
+                                    - composable
+                      long: >
+                                    This template-based header-only library for C++ 11 implements several composable memory allocation strategies
+                                    with the goal of enabling the user to tailor memory allocation for a specific problem.
 
         contact:
             name:       contact
