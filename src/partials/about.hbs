@@ -2,13 +2,22 @@
 <div class="container">
     <div id="about" class="section">
         <div class="row">
-            <div class="col m2 hide-on-med-and-down"></div>
-            <div class="col m8">
-                <h1 class="center">Hi, I'm Rico A. Beti</h1>
+            <div class="col m2 s0"></div>
+            <div class="col m8 s12">
+                <div class="valign-wrapper">
+                    <h1 class="center-align">
+                        <span></span>
+                    </h1>
+                </div>
+                <div id="typed-strings" style="display:none">
+                    {{#each headings}}
+                        <p>{{{this}}}</p>
+                    {{/each}}
+                </div>
                 <p class="flow-text center">{{text}}</p>
                 <p class="center">{{> social }}</p>
             </div>
-            <div class="col m2 hide-on-med-and-down"></div>
+            <div class="col m2 s0"></div>
         </div>
     </div>
 </div>

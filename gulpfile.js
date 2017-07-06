@@ -80,7 +80,10 @@ gulp.task('build:js', function() {
 });
 
 gulp.task('dev:js', function() {
-    return gulp.src(['./src/js/portfolio.js'])
+    return gulp.src([
+            './src/js/typed.js',
+            './src/js/portfolio.js'
+        ])
         .pipe(concat('portfolio.js'))
         .pipe(gulp.dest('./dist/'))
         .pipe(bs.stream());

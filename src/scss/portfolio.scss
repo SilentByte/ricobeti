@@ -14,5 +14,22 @@ nav li {
 #about {
     margin-top: 6em;
     margin-bottom: 6em;
+
+    h1 {
+        width: 100%;
+    }
+
+    .valign-wrapper {
+        height: 8.4rem;
+    }
 }
 
+.typed-cursor  {
+    animation: blink 1.0s infinite;
+}
+
+@keyframes blink{
+      0% { opacity: 1.0; }
+     50% { opacity: 0.1; }
+    100% { opacity: 1.0; }
+}
