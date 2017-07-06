@@ -7,9 +7,11 @@ site:
     url:            https://ricobeti.ch
     description:    Personal Portfolio.
     brand:          RB
-    theme:          3465A4
-    colors:         blue-grey darken-2
-    accent:         blue-grey
+
+    theme:
+        primary:    3465A4
+        colors:     blue-grey darken-2
+        accent:     blue-grey
 
     social:
         twitter:    https://twitter.com/RicoBeti
