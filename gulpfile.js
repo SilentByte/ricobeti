@@ -89,6 +89,7 @@ gulp.task('dev:js', function() {
 gulp.task('bs', function() {
     bs.init({
         open: false,
+        notify: false,
         server: {
             baseDir: './dist/'
         },
