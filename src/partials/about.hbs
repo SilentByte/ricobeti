@@ -1,24 +1,14 @@
 {{!-- About --}}
 <div class="container">
-    <div class="section">
+    <div id="about" class="section">
         <div class="row">
-            <div class="col s12">
-                <div class="card horizontal">
-                    <div class="card-image">
-                        <img src="./images/about.jpg"
-                             title="Rico A. Beti"
-                             alt="Rico A. Beti">
-                    </div>
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <p class="flow-text">About.</p>
-                        </div>
-                        <div class="card-action">
-                            {{> social }}
-                        </div>
-                    </div>
-                </div>
+            <div class="col m2 hide-on-med-and-down"></div>
+            <div class="col m8">
+                <h1 class="center">Hi, I'm Rico A. Beti</h1>
+                <p class="flow-text center">{{text}}</p>
+                <p class="center">{{> social }}</p>
             </div>
+            <div class="col m2 hide-on-med-and-down"></div>
         </div>
     </div>
 </div>
