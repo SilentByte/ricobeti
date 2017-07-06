@@ -8,6 +8,14 @@ site:
     description:    Personal Portfolio.
     brand:          RB
     theme:          3465A4
+    colors:         blue-grey darken-2
+    accent:         blue-grey
+
+    social:
+        twitter:    https://twitter.com/RicoBeti
+        linkedin:   https://www.linkedin.com/in/ricobeti/
+        github:     https://github.com/SilentByte
+        email:      mailto:rico@beti.ch
 
     sections:
         - name:     about
