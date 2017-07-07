@@ -1,21 +1,23 @@
 {{!-- Navigation --}}
-<nav class="{{@root.site.theme.colors}}" role="navigation">
-    <div class="nav-wrapper container">
-        <a id="logo-container" href="{{@root.site.url}}" class="brand-logo">{{@root.site.brand}}</a>
-        <ul class="right hide-on-med-and-down">
-            {{#each @root.site.sections}}
-                {{#if this.name}}
-                    <li><a href="#{{this.name}}" title="{{this.title}}" class="anchor-scroll">{{this.title}}</a></li>
-                {{/if}}
-            {{/each}}
-        </ul>
-        <ul id="nav-mobile" class="side-nav">
-            {{#each @root.site.sections}}
-                {{#if this.name}}
-                    <li><a href="#{{this.name}}" title="{{this.title}}">{{this.title}}</a></li>
-                {{/if}}
-            {{/each}}
-        </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-</nav>
+<div class="navbar-fixed">
+    <nav class="{{@root.site.theme.colors}}" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="{{@root.site.url}}" class="brand-logo">{{@root.site.brand}}</a>
+            <ul class="right hide-on-med-and-down">
+                {{#each @root.site.sections}}
+                    {{#if this.name}}
+                        <li><a href="#{{this.name}}" title="{{this.title}}" class="anchor-scroll">{{this.title}}</a></li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                {{#each @root.site.sections}}
+                    {{#if this.name}}
+                        <li><a href="#{{this.name}}" title="{{this.title}}">{{this.title}}</a></li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>
