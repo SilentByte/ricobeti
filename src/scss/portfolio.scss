@@ -7,14 +7,6 @@ nav li {
     font-weight: bold;
 }
 
-.vspace-small {
-    padding-top: 0.5em;
-}
-
-.extra-margin {
-    margin: 16px;
-}
-
 #about {
     margin-top: 6em;
     margin-bottom: 6em;
@@ -26,6 +18,32 @@ nav li {
     .valign-wrapper {
         height: 8.4rem;
     }
+}
+
+.vspace-small {
+    padding-top: 0.5em;
+}
+
+.extra-margin {
+    margin: 16px;
+}
+
+.large-icon {
+    padding-top: 3rem;
+    font-size: 7rem;
+}
+
+.icon-section {
+    margin-top: 3rem;
+}
+
+.section {
+    margin-top: 6rem;
+}
+
+.section-inverse {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .typed-cursor  {
