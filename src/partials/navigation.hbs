@@ -1,7 +1,7 @@
 {{!-- Navigation --}}
 <nav class="{{@root.site.theme.colors}}" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">{{@root.site.brand}}</a>
+        <a id="logo-container" href="{{@root.site.url}}" class="brand-logo">{{@root.site.brand}}</a>
         <ul class="right hide-on-med-and-down">
             {{#each @root.site.sections}}
                 {{#if this.name}}
