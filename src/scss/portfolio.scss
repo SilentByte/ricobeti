@@ -7,6 +7,10 @@ nav li {
     font-weight: bold;
 }
 
+h2 {
+    margin-bottom: 4rem;
+}
+
 #about {
     margin-top: 6em;
     margin-bottom: 6em;
@@ -29,12 +33,7 @@ nav li {
 }
 
 .large-icon {
-    padding-top: 3rem;
     font-size: 7rem;
-}
-
-.icon-section {
-    margin-top: 3rem;
 }
 
 .card-action a {
@@ -54,6 +53,11 @@ nav li {
 .page-footer .row {
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.quote {
+    font-size: 3.5rem;
+    font-style: italic;
 }
 
 .typed-cursor  {
