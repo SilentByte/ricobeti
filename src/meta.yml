@@ -24,7 +24,7 @@ site:
         navigation:
 
         about:
-            name:       about
+            name:       home
             title:      About
             headings:
                         - ^500 Hi, I'm <span class="blue-grey-text">Rico</span>.^800
