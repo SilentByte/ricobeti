@@ -118,6 +118,9 @@ site:
                                     This template-based header-only library for C++ 11 implements several composable memory allocation strategies
                                     with the goal of enabling the user to tailor memory allocation for a specific problem.
 
+        quote:
+            text:       Dividing problems into smaller ones is the underlying difficulty, the rest is a piece of cake!
+
         contact:
             name:       contact
             title:      Contact
