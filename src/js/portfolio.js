@@ -18,12 +18,12 @@
 
         var typed = new Typed('#about h1 span', {
             stringsElement: '#typed-strings',
-            loop:false,
+            loop: false,
             startDelay: 0,
             typeSpeed: 60,
             backSpeed: 40,
             showCursor: true,
-            cursorChar: '|',
+            cursorChar: '│',
             autoInsertCss: true
         });
     });
