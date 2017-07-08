@@ -7,7 +7,7 @@ site:
     url:            https://ricobeti.ch
     mailer-url:     https://ricobeti.ch/mail/
     description:    Rico A. Beti, Software Enthusiast, Personal Portfolio.
-    brand:          RB
+    brand:          ‹RB/›
 
     theme:
         primary:        3465A4

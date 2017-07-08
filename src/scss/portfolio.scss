@@ -30,6 +30,12 @@ h2 {
     z-index: 996;
 }
 
+.side-nav li>a.sidenav-brand {
+    font-size: 3rem;
+    height: 10rem;
+    line-height: 10rem;
+}
+
 .vspace-small {
     padding-top: 0.5em;
 }
