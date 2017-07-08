@@ -72,7 +72,10 @@ gulp.task('dev:css', function() {
 });
 
 gulp.task('build:js', function() {
-    return gulp.src(['./src/js/portfolio.js'])
+    return gulp.src([
+            './src/js/typed.js',
+            './src/js/portfolio.js'
+        ])
         .pipe(concat('portfolio.js'))
         .pipe(uglify())
         .pipe(gulp.dest('./dist/'))
