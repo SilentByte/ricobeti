@@ -10,7 +10,7 @@ site:
     brand:          ‹RB/›
 
     theme:
-        primary:        3465A4
+        primary:        37474F
         colors:         blue-grey darken-2
         accent:         blue-grey
         divider:        blue-grey
