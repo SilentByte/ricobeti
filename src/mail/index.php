@@ -34,7 +34,7 @@
 
     $mailer->AddReplyTo($email, $name);
     $mailer->SetFrom(getenv('CONFIG_EMAIL_ADDRESS'), 'Contact Form');
-    $mailer->AddAddress(getenv('CONFIG_EMAIL_TO');
+    $mailer->AddAddress(getenv('CONFIG_EMAIL_TO'));
 
     $mailer->Subject = 'Contact Form (ricobeti.ch): ' . $name;
     $mailer->Body    = ""
