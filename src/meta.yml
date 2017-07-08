@@ -30,10 +30,10 @@ site:
                         - ^500 Hi, I'm <span class="blue-grey-text">Rico</span>.^800
                         - ^500 I <i class="fa fa-heart blue-grey-text" aria-hidden="true"></i> Coding!^800
                         - ^500 This is my <span class="blue-grey-text">online</span> portfolio.^800
-                        - ^500 Rico A. Beti
+                        - ^500 Rico A<span class="blue-grey-text">.</span> Beti
             text: >
                         I'm a passionate software engineer of Swiss origin
-                        living and studying in Perth, WA.
+                        now living in Perth, WA.
 
         activities:
             name:       activities
@@ -64,6 +64,21 @@ site:
                                     a backing ticketing system for managing requests for help, and a back-end server system
                                     combined with an extensible knowledge base. System is in active use in Nepal's remote regions.
 
+                    - title:        LiteCache
+                      image:        litecache.png
+                      url:          <a href="https://github.com/SilentByte/litecache"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Github Repository</a>
+                      short:        A lightweight, easy-to-use, and straightforward PHP caching library.
+                      tags:
+                                    - psr-16
+                                    - cache-storage
+                      long: >
+                                    LiteCache is a lightweight, easy-to-use, and PSR-16 compliant caching library for PHP 7.0+
+                                    that tries to utilize PHP's built in caching mechanisms. Advanced caching systems such as
+                                    Memcached are often not available on low-cost hosting providers. However, code/opcode caching
+                                    is normally enabled to speed up execution. LiteCache leverages this functionality by generating
+                                    *.php files for cached objects which are then optimized and cached by the execution environment.
+
+                secondary:
                     - title:        Online Quiz | Gamification
                       image:        quiz.png
                       short:        Increase user perception and engagement by the means of gamification and multiplayer mode.
@@ -78,21 +93,6 @@ site:
                                     for use at educational institutions. Tasks included security improvements, MVC refactoring,
                                     and implementation of an interactive, multiplayer-capable real-time challenge mode. A
                                     sophisticated gamification approach was introduced featuring stats and achievements.
-
-                secondary:
-                    - title:        LiteCache
-                      image:        litecache.png
-                      url:          <a href="https://github.com/SilentByte/litecache"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Github Repository</a>
-                      short:        A lightweight, easy-to-use, and straightforward PHP caching library.
-                      tags:
-                                    - psr-16
-                                    - cache-storage
-                      long: >
-                                    LiteCache is a lightweight, easy-to-use, and PSR-16 compliant caching library for PHP 7.0+
-                                    that tries to utilize PHP's built in caching mechanisms. Advanced caching systems such as
-                                    Memcached are often not available on low-cost hosting providers. However, code/opcode caching
-                                    is normally enabled to speed up execution. LiteCache leverages this functionality by generating
-                                    *.php files for cached objects which are then optimized and cached by the execution environment.
 
                     - title:        Dynamic Lexer
                       image:        dynlex.png
