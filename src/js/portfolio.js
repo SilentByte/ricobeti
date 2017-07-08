@@ -9,6 +9,8 @@
         $('.button-collapse').sideNav();
 
         $('a.anchor-scroll').bind('click', function(event) {
+            $('.button-collapse').sideNav('hide');
+
             var anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $(anchor.attr('href')).offset().top - 64
