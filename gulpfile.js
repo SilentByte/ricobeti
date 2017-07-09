@@ -17,6 +17,18 @@ const bs = require('browser-sync').create();
 const composer = require('gulp-composer');
 const YAML = require('yamljs');
 
+const fs = require('fs');
+
+
+const loadAnalyticsCode = function() {
+    if(!fs.existsSync('./src/analytics.js')) {
+        return '';
+    }
+
+    return '<script>'
+        + fs.readFileSync('./src/analytics.js', 'utf8')
+        + '</script>';
+};
 
 process.env['COMPOSER_VENDOR_DIR'] = './dist/mail/vendor';
 
@@ -34,7 +46,10 @@ gulp.task('build:html', function() {
 
     return gulp.src('./src/index.hbs')
         .pipe(handlebars(meta, {
-            batch : ['./src/partials/']
+            batch : ['./src/partials/'],
+            partials: {
+                analytics: loadAnalyticsCode()
+            }
         }))
         .pipe(rename('index.html'))
         .pipe(htmlmin({
@@ -50,7 +65,10 @@ gulp.task('dev:html', function() {
 
     return gulp.src('./src/index.hbs')
         .pipe(handlebars(meta, {
-            batch : ['./src/partials/']
+            batch : ['./src/partials/'],
+            partials: {
+                analytics: loadAnalyticsCode()
+            }
         }))
         .pipe(rename('index.html'))
         .pipe(gulp.dest('./dist/'))
