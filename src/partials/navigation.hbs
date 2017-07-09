@@ -1,0 +1,37 @@
+{{!-- Navigation --}}
+<div class="navbar-fixed">
+    <nav class="{{@root.site.theme.colors}}" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="{{@root.site.url}}" class="brand-logo">{{@root.site.brand}}</a>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                {{#each @root.site.sections}}
+                    {{#if this.name}}
+                        <li>
+                            <a href="#{{this.name}}" title="{{this.title}}" class="waves-effect waves-light anchor-scroll">
+                                {{this.title}}
+                            </a>
+                        </li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li class="blue-grey">
+                    <a href="{{@root.site.url}}" class="sidenav-brand waves-effect waves-light white-text center-align">
+                        {{@root.site.brand}}
+                    </a>
+                </li>
+
+                {{#each @root.site.sections}}
+                    {{#if this.name}}
+                        <li>
+                            <a href="#{{this.name}}" title="{{this.title}}" class="waves-effect waves-dark anchor-scroll">
+                                {{this.title}}
+                            </a>
+                        </li>
+                    {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </nav>
+</div>

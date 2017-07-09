@@ -1,0 +1,113 @@
+//
+// Portfolio Style
+//
+
+nav li {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 4rem;
+}
+
+#about {
+    margin-top: 6em;
+    margin-bottom: 6em;
+
+    h1 {
+        width: 100%;
+    }
+
+    .valign-wrapper {
+        height: 8.4rem;
+    }
+}
+
+#sidenav-overlay {
+    // Workaround for Materialize CSS Issue 2879, see:
+    // https://github.com/Dogfalo/materialize/issues/2879
+    z-index: 996;
+}
+
+.side-nav li>a.sidenav-brand {
+    font-size: 3rem;
+    height: 10rem;
+    line-height: 10rem;
+}
+
+.vspace-small {
+    padding-top: 0.5em;
+}
+
+.extra-margin {
+    margin: 16px;
+}
+
+.large-icon {
+    font-size: 7rem;
+}
+
+.card-action a {
+    color: #455A64 !important;
+}
+
+.section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.section-inverse {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    text-shadow: 0 0 8px #263238;
+}
+
+.contact-submit {
+    text-align: right;
+}
+
+.page-footer .row {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.quote {
+    font-size: 3.5rem;
+    font-style: italic;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.typed-cursor  {
+    animation: blink 1.0s infinite;
+    color: #607D8B;
+}
+
+@keyframes blink{
+      0% { opacity: 1.0; }
+     50% { opacity: 0.1; }
+    100% { opacity: 1.0; }
+}
+
+
+@media (max-width: 600px) {
+    #about h1 {
+        font-size: 3.0rem;
+    }
+
+    .extra-margin {
+        margin: 8px;
+    }
+
+    .quote {
+        font-size: 2.0rem;
+    }
+
+    .contact-submit {
+        text-align: left;
+    }
+}
+
