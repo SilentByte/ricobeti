@@ -2,41 +2,41 @@
 <div class="container">
     <div id="contact" class="section">
         <div class="row">
-            <h2 class="center-align">Get in Touch</h2>
+            <h2 class="center-align">{{{mdi heading}}}</h2>
             <div class="col s0 l1"></div>
             <form id="contact-form"
                   class="col s12 l10"
                   data-mailer-url="{{@root.site.mailer-url}}"
-                  data-text-success="{{@root.site.sections.contact.success}}"
-                  data-text-failure="{{@root.site.sections.contact.failure}}">
+                  data-text-success="{{success}}"
+                  data-text-failure="{{failure}}">
 
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="contact-name" type="text" class="validate" required>
-                        <label for="contact-name">Your Name</label>
+                        <label for="contact-name">{{{mdi form-name}}}</label>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="contact-email" type="email" class="validate" required>
-                        <label for="contact-email">Your E-Mail Address</label>
+                        <label for="contact-email">{{{mdi form-email}}}</label>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s12">
                         <textarea id="contact-message" class="materialize-textarea validate" required></textarea>
-                        <label for="contact-message">Your Message</label>
+                        <label for="contact-message">{{{mdi form-message}}}</label>
                     </div>
                 </div>
 
                 <div class="contact-submit">
                     <p class="dark-grey-text right-align">
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> Your personal details are kept private and secure.
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> {{{mdi privacy}}}
                     </p>
                     <button type="submit" class="btn waves-effect waves-light blue-grey">
-                        Submit <i class="material-icons right">send</i>
+                        {{{mdi form-submit}}} <i class="material-icons right">send</i>
                     </button>
                 </div>
             </form>

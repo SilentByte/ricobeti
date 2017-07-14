@@ -39,7 +39,16 @@ site:
         activities:
             name:       activities
             title:      Interests
+            heading:    Personal Interests
+            list:
+                        - title: Coding
+                          icon:  fa-code
 
+                        - title: Traveling & Linguistics
+                          icon:  fa-globe
+
+                        - title: Aviation &amp; Space Exploration
+                          icon:  fa-rocket
 
         portfolio:
             name:       portfolio
@@ -49,6 +58,7 @@ site:
                     - title:        Helvetas Horticulture System
                       image:        hhs.png
                       url:          <a href="https://nepal.helvetas.org/en/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Helvetas Nepal</a>
+
                       short: >
                                     Streamline humanitarian aid for farmers in remote
                                     regions of Nepal using modern tech.
@@ -123,10 +133,18 @@ site:
             text:       Dividing problems into smaller ones is the underlying difficulty, the rest is a piece of cake!
 
         contact:
-            name:       contact
-            title:      Contact
-            success:    Thanks! I will get back to you shortly.
-            failure:    Message could not be sent, please try again
+            name:           contact
+            title:          Contact
+            heading:        Get in Touch
+            form-name:      Your Name
+            form-email:     Your E-Mail Address
+            form-message:   Your Message
+            form-submit:    Submit
+            success:        Thanks! I will get back to you shortly.
+            failure:        Message could not be sent, please try again
+            privacy:        Your personal details are kept private and secure.
 
         footer:
+            heading:        Cheers! ;-)
+            copyright:      Copyright © 2017 by Rico A. Beti
 

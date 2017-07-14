@@ -15,10 +15,18 @@ const uglify = require('gulp-uglify');
 
 const bs = require('browser-sync').create();
 const composer = require('gulp-composer');
+const markdown = require('markdown-it');
 const YAML = require('yamljs');
 
 const fs = require('fs');
 
+const md = markdown({
+    html: true,
+    breaks: false,
+    linkify: true,
+    typographer: true,
+    quotes: '“”‘’'
+});
 
 const loadAnalyticsCode = function() {
     if(!fs.existsSync('./src/analytics.js')) {
@@ -30,8 +38,16 @@ const loadAnalyticsCode = function() {
         + '</script>';
 };
 
-process.env['COMPOSER_VENDOR_DIR'] = './dist/mail/vendor';
+const markdownHelper = function(content) {
+    return new handlebars.Handlebars.SafeString(md.render(content));
+};
 
+const markdownInlineHelper = function(content) {
+    return new handlebars.Handlebars.SafeString(md.renderInline(content));
+};
+
+
+process.env['COMPOSER_VENDOR_DIR'] = './dist/mail/vendor';
 
 gulp.task('copy:static', function() {
     return gulp.src([
@@ -49,6 +65,10 @@ gulp.task('build:html', function() {
             batch : ['./src/partials/'],
             partials: {
                 analytics: loadAnalyticsCode()
+            },
+            helpers: {
+                md: markdownHelper,
+                mdi: markdownInlineHelper
             }
         }))
         .pipe(rename('index.html'))
@@ -68,6 +88,10 @@ gulp.task('dev:html', function() {
             batch : ['./src/partials/'],
             partials: {
                 analytics: loadAnalyticsCode()
+            },
+            helpers: {
+                md: markdownHelper,
+                mdi: markdownInlineHelper
             }
         }))
         .pipe(rename('index.html'))
