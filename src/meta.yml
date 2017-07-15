@@ -63,8 +63,7 @@ site:
                       url:          <a href="https://nepal.helvetas.org/en/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Helvetas Nepal</a>
 
                       short: >
-                                    Streamline humanitarian aid for farmers in remote
-                                    regions of Nepal using modern tech.
+                                    Streamline humanitarian aid for farmers in remote regions of Nepal using modern tech.
                       tags:
                                     - android
                                     - java
@@ -86,11 +85,14 @@ site:
                                     - psr-16
                                     - cache-storage
                       long: >
-                                    LiteCache is a lightweight, easy-to-use, and PSR-16 compliant caching library for PHP 7.0+
+                                    LiteCache is a lightweight, easy-to-use, and [PSR-16 compliant](http://www.php-fig.org/psr/psr-16/) caching library for PHP 7.0+
                                     that tries to utilize PHP's built in caching mechanisms. Advanced caching systems such as
-                                    Memcached are often not available on low-cost hosting providers. However, code/opcode caching
+                                    [Memcached](https://memcached.org/) are often not available on low-cost hosting providers. However, code/opcode caching
                                     is normally enabled to speed up execution. LiteCache leverages this functionality by generating
                                     *.php files for cached objects which are then optimized and cached by the execution environment.
+
+
+                                    Full [API docs](https://docs.silentbyte.com/litecache) available.
 
                 secondary:
                     - title:        Online Quiz | Gamification
@@ -118,7 +120,11 @@ site:
                                     - syntax
                       long: >
                                     DynLex is an easy-to-use library for PHP that provides the functionality to create and use dynamically
-                                    configurable lexers accessed via a fluid interface.
+                                    configurable lexers accessed via a fluid interface. [A few examples](https://github.com/SilentByte/sb-dynlex/tree/master/examples)
+                                    illustrate potential usages.
+
+
+                                    Full [API docs](https://docs.silentbyte.com/dynlex) available.
 
                     - title:        Memory Allocator
                       image:        memalloc.png
@@ -130,7 +136,8 @@ site:
                                     - composable
                       long: >
                                     This template-based header-only library for C++ 11 implements several composable memory allocation strategies
-                                    with the goal of enabling the user to tailor memory allocation for a specific problem.
+                                    with the goal of enabling the user to tailor memory allocation for a specific problem. The idea is partially based
+                                    on Andrei Alexandrescu's [excellent talk](https://www.youtube.com/watch?v=LIb3L4vKZ7U).
 
         quote:
             text:       Dividing problems into smaller ones is the underlying difficulty, the rest is a piece of cake!
