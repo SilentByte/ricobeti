@@ -43,12 +43,15 @@ site:
             list:
                         - title: Coding
                           icon:  fa-code
+                          text:  Creativity and occasional frustration in perfect balance.
 
                         - title: Traveling & Linguistics
                           icon:  fa-globe
+                          text:  Not only code but also natural languages get me excited.
 
                         - title: Aviation &amp; Space Exploration
                           icon:  fa-rocket
+                          text:  Closely following NASA and SpaceX launches and missions.
 
         portfolio:
             name:       portfolio

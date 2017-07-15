@@ -24,6 +24,12 @@ h2 {
     }
 }
 
+#activities p {
+    @media (max-width: 600px) {
+        margin-bottom: 3em;
+    }
+}
+
 #sidenav-overlay {
     // Workaround for Materialize CSS Issue 2879, see:
     // https://github.com/Dogfalo/materialize/issues/2879
@@ -61,6 +67,10 @@ h2 {
     padding-top: 8rem;
     padding-bottom: 8rem;
     text-shadow: 0 0 8px #263238;
+
+    p {
+        text-shadow: 0 0 4px #263238;
+    }
 }
 
 .contact-submit {
