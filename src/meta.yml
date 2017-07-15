@@ -39,7 +39,19 @@ site:
         activities:
             name:       activities
             title:      Interests
+            heading:    Personal Interests
+            list:
+                        - title: Coding
+                          icon:  fa-code
+                          text:  Creativity and occasional frustration in perfect balance.
 
+                        - title: Traveling & Linguistics
+                          icon:  fa-globe
+                          text:  Not only code but also natural languages get me excited.
+
+                        - title: Aviation &amp; Space Exploration
+                          icon:  fa-rocket
+                          text:  Closely following NASA and SpaceX launches and missions.
 
         portfolio:
             name:       portfolio
@@ -49,9 +61,9 @@ site:
                     - title:        Helvetas Horticulture System
                       image:        hhs.png
                       url:          <a href="https://nepal.helvetas.org/en/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Helvetas Nepal</a>
+
                       short: >
-                                    Streamline humanitarian aid for farmers in remote
-                                    regions of Nepal using modern tech.
+                                    Streamline humanitarian aid for farmers in remote regions of Nepal using modern tech.
                       tags:
                                     - android
                                     - java
@@ -73,11 +85,14 @@ site:
                                     - psr-16
                                     - cache-storage
                       long: >
-                                    LiteCache is a lightweight, easy-to-use, and PSR-16 compliant caching library for PHP 7.0+
+                                    LiteCache is a lightweight, easy-to-use, and [PSR-16 compliant](http://www.php-fig.org/psr/psr-16/) caching library for PHP 7.0+
                                     that tries to utilize PHP's built in caching mechanisms. Advanced caching systems such as
-                                    Memcached are often not available on low-cost hosting providers. However, code/opcode caching
+                                    [Memcached](https://memcached.org/) are often not available on low-cost hosting providers. However, code/opcode caching
                                     is normally enabled to speed up execution. LiteCache leverages this functionality by generating
                                     *.php files for cached objects which are then optimized and cached by the execution environment.
+
+
+                                    Full [API docs](https://docs.silentbyte.com/litecache) available.
 
                 secondary:
                     - title:        Online Quiz | Gamification
@@ -105,7 +120,11 @@ site:
                                     - syntax
                       long: >
                                     DynLex is an easy-to-use library for PHP that provides the functionality to create and use dynamically
-                                    configurable lexers accessed via a fluid interface.
+                                    configurable lexers accessed via a fluid interface. [A few examples](https://github.com/SilentByte/sb-dynlex/tree/master/examples)
+                                    illustrate potential usages.
+
+
+                                    Full [API docs](https://docs.silentbyte.com/dynlex) available.
 
                     - title:        Memory Allocator
                       image:        memalloc.png
@@ -117,16 +136,25 @@ site:
                                     - composable
                       long: >
                                     This template-based header-only library for C++ 11 implements several composable memory allocation strategies
-                                    with the goal of enabling the user to tailor memory allocation for a specific problem.
+                                    with the goal of enabling the user to tailor memory allocation for a specific problem. The idea is partially based
+                                    on Andrei Alexandrescu's [excellent talk](https://www.youtube.com/watch?v=LIb3L4vKZ7U).
 
         quote:
             text:       Dividing problems into smaller ones is the underlying difficulty, the rest is a piece of cake!
 
         contact:
-            name:       contact
-            title:      Contact
-            success:    Thanks! I will get back to you shortly.
-            failure:    Message could not be sent, please try again
+            name:           contact
+            title:          Contact
+            heading:        Get in Touch
+            form-name:      Your Name
+            form-email:     Your E-Mail Address
+            form-message:   Your Message
+            form-submit:    Submit
+            success:        Thanks! I will get back to you shortly.
+            failure:        Message could not be sent, please try again
+            privacy:        Your personal details are kept private and secure.
 
         footer:
+            heading:        Cheers! ;-)
+            copyright:      Copyright © 2017 by Rico A. Beti
 
