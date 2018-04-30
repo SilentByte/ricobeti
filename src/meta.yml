@@ -94,6 +94,21 @@ site:
 
                                     Full [API docs](https://docs.silentbyte.com/litecache) available.
 
+                    - title:        Rebounce Online
+                      image:        rebounce.png
+                      url:          <a href="https://github.com/SilentByte/https://github.com/silentbyte/rebounce"><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Github Repository</a>
+                      short:        A web service providing open endpoints for testing restful functionality.
+                      tags:
+                                    - webservice
+                                    - restful
+                                    - devtool
+                      long: >
+                                    [Rebounce Online](https://rebounce.online/) is a web service that provides a number of useful open endpoints for testing restful services.
+                                    This is a dev tool aimed at developers who want to find out how their app behaves under different scenarios in terms of HTTP-based API calls.
+
+
+                                    <i class="grey-text">$ curl -L rebounce.online<wbr>/api/time</i>
+
                 secondary:
                     - title:        Online Quiz | Gamification
                       image:        quiz.png
